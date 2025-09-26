@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identificador de Triángulos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Identificador de Triángulos</h1>
+
+    <section class="inputs">
+      <div class="point-group">
+        <h2>Punto 1</h2>
+        <label>X1 <input id="x1" type="number" step="any" /></label>
+        <label>Y1 <input id="y1" type="number" step="any" /></label>
+      </div>
+      <div class="point-group">
+        <h2>Punto 2</h2>
+        <label>X2 <input id="x2" type="number" step="any" /></label>
+        <label>Y2 <input id="y2" type="number" step="any" /></label>
+      </div>
+      <div class="point-group">
+        <h2>Punto 3</h2>
+        <label>X3 <input id="x3" type="number" step="any" /></label>
+        <label>Y3 <input id="y3" type="number" step="any" /></label>
+      </div>
+      <div class="actions">
+        <button id="btn-calcular">Calcular tipo</button>
+        <button id="btn-ejemplo" title="Cargar ejemplo 1,1  2,1  1,2">Ejemplo</button>
+        <button id="btn-limpiar">Limpiar</button>
+      </div>
+    </section>
+
+    <section class="result">
+      <h2>Resultado</h2>
+      <output id="resultado">—</output>
+    </section>
+
+    <section class="canvas-section">
+      <h2>Visualización</h2>
+      <canvas id="lienzo" width="500" height="400" aria-label="Dibujo del triángulo"></canvas>
+    </section>
+
+    <footer>
+      <small>Ingresa tres puntos en el plano. Se validan puntos repetidos y colineales.</small>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html> 
